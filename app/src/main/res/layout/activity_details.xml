@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9000000"
+    tools:context=".youtube.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/video_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:tint="#0091EA"
+        android:scaleType="centerCrop"
+        android:onClick="goBack"
+        android:layout_margin="5dp"
+        android:visibility="visible"
+        style="@style/Widget.Design.TabLayout" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_image"
+        android:orientation="vertical"
+        android:background="#65020202">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLOOR Is LAVA HOUSE TROLL In MINECRAFT! (Funny)"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#FFF"/>
+
+        <TextView
+            android:id="@+id/des_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#9EFFFFFF"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="FLOOR Is LAVA HOUSE TROLL In MINECRAFT! If you enjoyed this video, watch more here: ..." />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_video_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_play_circle_filled_black_24dp"
+        android:scaleType="centerCrop"
+        android:onClick="playVideo"
+        android:tint="#0091EA"
+        android:visibility="visible"
+        style="@android:style/Widget.DeviceDefault.ActionBar.TabView" />
+
+</RelativeLayout>
